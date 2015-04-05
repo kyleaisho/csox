@@ -12,7 +12,7 @@ void init_udp_addrinfo(struct addrinfo* hints) {
 	hints.ai_socktype = SOCK_STREAM;
 }
 
-struct sockaddr* udp_socket(char* host, int* sockfd. char* port) {
+struct sockaddr* udp_socket(char* host, int* sockfd, char* port) {
 	struct addrinfo* servinfo, p;
 	struct addrinfo hints;
 	int res;
